@@ -36,4 +36,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: docker push ghcr.io/asianjohnboi/build-runner:${{ steps.previoustag.outputs.tag || 'latest' }}
+          tags: docker push ghcr.io/asianjohnboi/build-runner:${{ steps.latesttag.outputs.tag || 'latest' }}
